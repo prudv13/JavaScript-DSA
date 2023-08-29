@@ -207,3 +207,57 @@ console.log(double([3, 6, 7, 2, 9]));
 ![big-o-log](https://res.cloudinary.com/dqab7rimk/image/upload/v1693208975/DSA/big-o-log2_j371vr.png)
 
 ![big-o-log](https://res.cloudinary.com/dqab7rimk/image/upload/v1693209134/DSA/big-o-log3_bctiqk.png)
+
+## Objects
+- unordered, key value pairs
+```js
+let instructor = {
+    firstName: "Colt",
+    isInstructor: true,
+    favoriteNumbers: [1,2,3,4]
+}
+```
+### When to use objects
+- when you don't need order
+- when you need fast access / insertion and removal
+
+### Big - O of Objects
+- Insertion - O(1)
+- Updation - O(1)
+- Removal - O(1)
+- Access - O(1)
+- Searching - O(n)
+
+### Big - O of Object Methods
+- Object.keys - O(n)
+- Object.values - O(n)
+- Object.entries - O(n)
+- hasOwnProperty - O(1)
+
+
+## Arrays
+- ordered lists
+```js
+let names = ["Colt", "Angela", "Stephen"];
+let values = [true, {}, [], 2, "awesome"];
+```
+
+### When to use arrays
+- when you need order
+- when you need fast access / insertion and removal
+
+### Big - O of Arrays
+- Insertion - depends...
+- Removal - depends...
+- Searching - O(n)
+- Access - O(1)
+
+### Insertion, Removal at the end of an array : O(1)
+### Insertion, Removal at the start of an array : O(n)
+
+### Big - O of Array Methods
+- push, pop - O(1)
+- shift, unshift - O(n)
+- slice, splice - O(n)
+- sort - O(n*logN)
+- forEach, map, filter, reduce - O(n)
